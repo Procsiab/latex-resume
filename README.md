@@ -1,4 +1,4 @@
-# Procsiab CV
+# LaTeX Resume
 
 This is a repository for my resume project, integrated into my CD server.
 

@@ -1,0 +1,33 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: compile
+  image: docker.io/procsiab/texlive-it:latest-amd64
+  commands:
+  - make all
+
+- name: deploy
+  image: appleboy/drone-scp
+  settings:
+    host: 192.168.1.100
+    username: astro
+    key:
+      from_secret: astro-drone-key
+    port: 22
+    target: /srv/book/
+    source: pdf/lorenzo_prosseda.pdf
+    strip_components: 1
+  when:
+    branch:
+    - master
+    status:
+    - success
+
+---
+kind: signature
+hmac: 27874dbd82955c92aaee7ea54e2d8e91d1d5400a33a929b5db52722373ad85dc
+
+...
