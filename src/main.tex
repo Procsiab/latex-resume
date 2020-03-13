@@ -1,0 +1,43 @@
+%! TEX root = main.tex
+% Document style
+\documentclass[12pt]{moderncv}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1.5cm,bmargin=1cm,lmargin=1cm,rmargin=1cm,headheight=1cm,headsep=2cm,footskip=0cm}
+% Localizations
+\usepackage[english]{babel}
+% Other formatting packets
+\usepackage{lmodern}
+\usepackage{hyphenat}
+\usepackage{graphicx}
+% Footer with GDPR privacy disclaimer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\scriptsize In accordance with the clause 13 of the legislative decree GDPR 679/16, I allow the treatment of any personal data contained in my resume.}
+% Remove page numbers
+\nopagenumbers{}
+
+% Images folder path
+\graphicspath{ {../img/} }
+
+% ModernCV package settings
+\moderncvtheme[purple]{classic}
+\moderncvicons{awesome}
+% Contact info
+\address{Viale Italia 2}{04100 Latina (LT), Italy}
+\mobile{+39~380~8977~232}
+\email{lorenzo.prosseda@mail.polimi.it}
+\homepage{stecconetechnology.wordpress.com}
+\social[linkedin][www.linkedin.com/in/lorenzo-prosseda]{lorenzo-prosseda}
+\social[github][github.com/Procsiab]{Procsiab}
+\photo[80pt]{profile.jpg}
+% Name-Surname info
+\firstname{Lorenzo}
+\familyname{Prosseda}
+
+% In questo ambiente risiede il contenuto del documento
+\begin{document}
+    \include{contents}
+\end{document}
