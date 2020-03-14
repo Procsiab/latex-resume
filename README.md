@@ -1,6 +1,8 @@
 # LaTeX Resume
 
 [![Build Status](https://ci.procsiab.cf/api/badges/Procsiab/latex-resume/status.svg)](https://ci.procsiab.cf/Procsiab/latex-resume)
+[![Website](https://img.shields.io/website?up_message=online&url=https%3A%2F%2Fbook.procsiab.cf%2Florenzo_prosseda.pdf)](https://book.procsiab.cf/lorenzo_prosseda.pdf)
+[![License](https://img.shields.io/badge/license-GDPR-yellowgreen)](https://raw.githubusercontent.com/Procsiab/latex-resume/master/LICENSE)
 
 
 This is a repository for my resume project, integrated into my CD server.
