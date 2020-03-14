@@ -1,5 +1,8 @@
 # LaTeX Resume
 
+[![Build Status](https://ci.procsiab.cf/api/badges/Procsiab/latex-resume/status.svg)](https://ci.procsiab.cf/Procsiab/latex-resume)
+
+
 This is a repository for my resume project, integrated into my CD server.
 
 ## Project structure
