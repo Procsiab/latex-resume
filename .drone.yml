@@ -26,8 +26,18 @@ steps:
     status:
     - success
 
+- name: debug
+  image: docker.io/busybox:latest
+  commands:
+  - cat pdf/main.log
+  when:
+    branch:
+    - master
+    status:
+    - failure
+
 ---
 kind: signature
-hmac: 27874dbd82955c92aaee7ea54e2d8e91d1d5400a33a929b5db52722373ad85dc
+hmac: 3b0b933982b0c00e60078a4aabead1850ac5a43cc557a2375a63391bfb9926ae
 
 ...
