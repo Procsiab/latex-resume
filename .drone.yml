@@ -11,6 +11,7 @@ steps:
 
 - name: deploy
   image: appleboy/drone-scp
+  failure: ignore
   settings:
     host: 192.168.1.100
     username: astro
@@ -28,6 +29,7 @@ steps:
 
 - name: debug
   image: docker.io/busybox:latest
+  failure: ignore
   commands:
   - cat pdf/main.log
   when:
@@ -38,6 +40,6 @@ steps:
 
 ---
 kind: signature
-hmac: 3b0b933982b0c00e60078a4aabead1850ac5a43cc557a2375a63391bfb9926ae
+hmac: d8cff27242b496c6b23407ab714a0484edcb90804b91061540b65d024c713f8d
 
 ...
