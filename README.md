@@ -9,7 +9,6 @@ This is a repository for my resume project, integrated into my CD server.
 
 ## Project structure
 
-- `main.tex`: file principale, contenente preambolo, pagina del titolo e inclusione dei file per i capitoli;
 - `main.tex`: main file containing preamble, title and content inclusions;
 - `content.tex`: pure content file, without boilerplate code;
 - `title.tex`: file containing the style for the document.
