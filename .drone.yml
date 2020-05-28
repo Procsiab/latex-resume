@@ -5,7 +5,7 @@ name: default
 
 steps:
 - name: compile
-  image: docker.io/procsiab/texlive-it:latest-amd64
+  image: docker.io/procsiab/texlive-it:1.0-amd64
   commands:
   - make all
 
@@ -40,6 +40,6 @@ steps:
 
 ---
 kind: signature
-hmac: d8cff27242b496c6b23407ab714a0484edcb90804b91061540b65d024c713f8d
+hmac: 4756ad465787f619ab40b8ec97ee45031ad4b5ed20ded33820f2249f1239f876
 
 ...
