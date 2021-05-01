@@ -5,18 +5,18 @@ name: default
 
 steps:
 - name: compile
-  image: docker.io/procsiab/texlive-it:1.0-amd64
+  image: docker.io/procsiab/texlive-it:1.2-amd64
   commands:
   - make all
 
 - name: deploy
-  image: appleboy/drone-scp
+  image: appleboy/drone-scp:linux-amd64
   failure: ignore
   settings:
-    host: 192.168.1.100
-    username: astro
+    host: sirius.node.consul
+    username: publisher
     key:
-      from_secret: astro-drone-key
+      from_secret: publisher-drone-key
     port: 22
     target: /srv/book/
     source: pdf/lorenzo_prosseda.pdf
@@ -40,6 +40,6 @@ steps:
 
 ---
 kind: signature
-hmac: 4756ad465787f619ab40b8ec97ee45031ad4b5ed20ded33820f2249f1239f876
+hmac: 54c73739398eb7f454c196f4962248b1a7bce2d7feb6e3be0bf698fe2cc5ec7b
 
 ...
